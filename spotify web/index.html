@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <nav>
+        <img class="hamburger " src="/resources/logo.svg" alt="hamburger">
+        <div class="logo">
+            <img src="/resources/logo.svg" alt="logo">
+        </div>
+        <div class="midnav">
+            <div class="home">
+                <button>
+                    <img src="/resources/home.svg" alt="home">
+                </button>
+            </div>
+            <div class="searchbar">
+                <img id="search" src="/resources/search.svg" alt="">
+                <input type="text" placeholder="What do you want to play?">
+                <img id='browse' src="/resources/browse.svg" alt="browse">
+            </div>
+        </div>
+        <div class="account">
+            <button id="signup"><a
+                    href="https://www.spotify.com/in-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F">Sign
+                    up</a></button>
+            <button id="login"><a
+                    href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2F">Log
+                    in</a></button>
+        </div>
+    </nav>
+    <div class="container ">
+        <div class="left ">
+            <div class="library">
+                <ul class="heading">
+                    <li><img id="lib" src="/resources/library.svg" alt="library"></li>
+                    <li>
+                        <h2>Your Library</h2>
+                    </li>
+                    <li><img class="create" width="16" src="/resources/create.svg" alt="create sign"></li>
+                    <div class="close">
+                        <img class="invert" src="/resources/close.svg" alt="close">
+                    </div>
+                </ul>
+                <div class="songlist">
+                    <ul>
+                        <!-- songs Will Show here in inspect -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- footer on left side -->
+
+            <div class="footer">
+                <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+                <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy Center</span></a>
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+                <div class="lang"><button><img src="/resources/globe.svg" alt="globe">English</button></div>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <div class="spotifyplaylist">
+                <h1>Spotify Playlists</h1>
+                <div class="cardcontainer">
+                    <!-- Card will apear here -->
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="barinfo">
+                        <div class="songinfo">
+                            <!-- Song Name Will Display here -->
+                        </div>
+                        <div class="songbtn">
+                            <img id="previousbtn" class="invert" src="/resources/prevsong.svg" alt="prevsong">
+                            <img id="playbtn" class="invert " src="/resources/play2.svg" alt="play">
+                            <img id="nextbtn" class="invert" src="/resources/nextsong.svg" alt="nextsong">
+                        </div>
+                        <div class="rightbar">
+                            <div class="volume">
+                                <img class="invert" src="/resources/volume.svg" alt="volume">
+                                <div class="range">
+                                    <input type="range" name="myrange" id="">
+                                </div>
+                            </div>
+                            <div class="songtime">
+                                <!-- Duration will Display here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer on right side  -->
+
+            <div class="footerright">
+                <div class="c1">
+                    <p>Company</p>
+                    <a href="https://www.spotify.com/in-en/about-us/contact/">About</a>
+                    <a href="https://www.lifeatspotify.com/">Jobs</a>
+                    <a href="https://newsroom.spotify.com/">For the Record</a>
+                </div>
+                <div class="c2">
+                    <p>Communities</p>
+                    <a href="https://artists.spotify.com/">For Artists</a>
+                    <a href="https://developer.spotify.com/">Developers</a>
+                    <a href="https://ads.spotify.com/">Advertising</a>
+                    <a href="https://investors.spotify.com/">Investors</a>
+                    <a href="https://spotifyforvendors.com/">Vendors</a>
+                </div>
+                <div class="c3">
+                    <p>Useful links</p>
+                    <a href="https://support.spotify.com/">Support</a>
+                    <a href="https://www.spotify.com/in-en/free/">Free Mobile App</a>
+                </div>
+                <div class="c4">
+                    <p>Spotify Plans</p>
+                    <a href="https://www.spotify.com/in-en/premium/?ref=spotifycom_footer_premium_individual">Premium
+                        Individual</a>
+                    <a href="https://www.spotify.com/in-en/duo/?ref=spotifycom_footer_premium_duo">Premium Duo</a>
+                    <a href="https://www.spotify.com/in-en/family/?ref=spotifycom_footer_premium_family">Premium
+                        Family</a>
+                    <a href="https://www.spotify.com/in-en/student/?ref=spotifycom_footer_premium_student">Premium
+                        Student</a>
+                    <a href="https://www.spotify.com/in-en/free/?ref=spotifycom_footer_free">Spotify Free</a>
+                </div>
+                <div class="c5">
+                    <div class="socialhandle">
+                        <button>
+                            <a href=""><img class="invert" src="/resources/github.svg" alt="github"></a>
+                        </button>
+                        <button>
+                            <a href="https://www.linkedin.com/in/abhay-gupta-32007224a"><img class="invert"
+                                    src="/resources/linkedin.svg" alt=""></a>
+                        </button>
+                        <button>
+                            <a href=""><img class="invert" src="/resources/instagram.svg" alt="instagram"></a>
+                        </button>
+                    </div>
+                    <img class="devimg" src="/resources/Abhay.jpg" alt="Dev Picture">
+                    <button class="about"><a href="">Know More</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="Javascript/script.js"></script>
+</body>
+
+</html>
