@@ -14,7 +14,7 @@ function formatSeconds(seconds) {
 // fetch data from directory
 async function getsongs(folder) {
     currfolder = folder;
-    let a = await fetch(`/${folder}/`);
+    let a = await fetch(`Songs/${folder}/`);
     let response = await a.text();
     // console.log(response);
     let div = document.createElement('div');
@@ -27,7 +27,7 @@ async function getsongs(folder) {
             songs.push(element.href.split(`/${folder}/`)[1]);
         }
         try {
-            let response = await fetch(`/${folder}/`);
+            let response = await fetch(`Songs/${folder}/`);
             if (!response.ok) throw new Error(`Http error! status: ${response.status}`);
             let text = await response.text();
         } catch (error) {
