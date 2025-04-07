@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1e1e1e;
+
+}
+.main{
+    background-image: url(Resource/background\ image.jpg);
+    /* background-size: max(1200px,100vw); */
+    height: 675px;
+    background-color: initial;
+    /* position: relative; */
+    /* background-attachment: fixed; */   
+}
+.box {
+    position: absolute;
+    top: 0;
+    height: 675px;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.60);  /* Adjust the background color as needed  */
+}
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit; /* Inherit the background color */
+    opacity: 0.60;
+    z-index: -1;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 45vw;
+    /* height: 10vh; */
+    padding: 25px 10px;
+}
+nav img{
+    width: 140px;
+    position: relative;
+    z-index: 10;
+}
+form{
+    margin: 100px;
+    padding: 100px;
+
+}
+form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 28px;
+    gap: 5px;
+    /* float: center; */
+}
+.btn-red{
+    color: white;
+    background-color: rgb(229, 9, 20);
+    font-size: 15px;
+    padding: 7px 15px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 10;
+    border: none;
+    /* padding: 1px; */
+}
+.btn-red2{
+    padding: 10px 25px;
+    font-size: 25px;
+}
+.btn-lang{
+    /* gap: 10px; */
+    /* margin: 0 10px; */
+    font-size: 15px;
+    padding: 5px 20px;
+    margin: 0 15px;
+    background-color: #0404048f;
+    /* opacity: 0.8; */
+    position: relative;
+    z-index: 10;
+}
+select{
+    background-color: black;
+    color: white;
+    border-radius: 0;
+}
+#myemail{
+    /* color: inherit; */
+    padding: 10px 50px;
+    background-color:#2f2e2e96;
+    color: white;
+    /* border-radius: 1px ; */
+    border: 1px solid gray;
+    font-size: 25px;
+}
+.box2{
+    display: flex;
+    /* margin: 10px; */
+    padding: 200px 150px;
+    height: 200px;
+    position: relative;
+    top: 590px;
+    background-color: black;
+}
+.content{
+    /* text-align: center; */
+    position: relative;
+    right: 65px;
+    font-size: 24px;
+    color: white;
+    padding: 10px 100px;
+}
+p{
+    margin: 12px 0;
+}
+.box2 img{
+    width: 509px;
+    /* height: 100px; */
+    /* position: relative;
+    bottom: 120px;
+    left: 75px; */
+    position: absolute;
+    left: 785px; 
+    bottom: 148px;
+    z-index: 1;
+}
+.box2 h3{
+    font-size: 55px;
+}
+.box2 video{
+    position: relative;
+    bottom: 50px;
+    left: 26px;
+    /* position: relative; */
+    height: 210px;
+    /* z-index: 1; */
+    /* float: right; */
+    /* position: absolute;
+    left: 782px; */
+}
+.box3{
+    display: flex;
+    margin: 8px 0;
+    padding: 200px;
+    height: 200px;
+    position: relative;
+    top: 590px;
+    background-color: black;
+    gap: 67px;
+} 
+.box3 img{
+    position: relative; 
+    bottom: 100px;
+    right: 30px;
+}
+.box3 .content{
+    font-size: 24px;
+    color: white;
+    padding: 10px 0px;
+    margin: -35px 0;
+}
+.box3 h3{
+    font-size: 55px;
+}
+.box4{
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+    padding: 200px 150px;
+    height: 200px;
+    position: relative;
+    top: 590px;
+    background-color: black;
+}
+.box4 img{
+    position: absolute;
+    z-index: 1;
+    left: 757px;
+    bottom: 97px;
+}
+.box4 video{
+    position: relative;
+    bottom: 41px;
+    right: 33px;
+    height: 200px;
+    width: 31%;
+}
+.box4 h3{
+    font-size: 55px;
+}
+.box4 .content p{
+    font-size: 27px;
+}
+.box5{
+    display: flex;
+    margin: 8px 0;
+    padding: 200px 100px 200px 210px;
+    height: 200px;
+    position: relative;
+    top: 590px;
+    background-color: black;
+    gap: 93px;
+} 
+.box5 img{
+    position: relative; 
+    bottom: 100px;
+    right: 30px;
+}
+.box5 .content{
+    font-size: 24px;
+    color: white;
+    padding: 10px 0px;
+    margin: -35px 0;
+}
+.box5 h3{
+    font-size: 55px;
+}
+.box5 .content p{
+    font-size: 27px;
+}
+footer{
+    /* margin: 100px; */
+    top: 2431px;
+    margin: 8px 0 0 0;
+    padding: 100px;
+    color: #bdbdbd;
+    height: 250px;
+    background-color: black;
+    position: relative;
+    /* border: 2px solid black; */
+    font-size: 18px;
+}
+.quicklinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* gap: 10px; */
+    /* justify-items: center; */
+}
+footer select{
+    /* position: relative; */
+    top: 12px;
+    right: 15px;
+}
+.n{
+    font-size: 15px;
+    margin: 35px 0;
+}
